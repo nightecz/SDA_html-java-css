@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+pseudotřídy
+- podle stavu -:hover(najede na to uživatel),, :visited, :focus
+- podle pořadí
+*/
+
+button {
+    display: block;
+    font-size: 1.3rem;
+    padding: .35em .7em;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s liner; /*můžeme i transition: all nebo jen background atd. lenárně se změní barvy na hover*/
+    /* transition-property: background-color;
+    transition-duration: 100ms;
+    transition-delay: 50ms;
+    transition-timing-function: linear
+    */
+}
+
+button:hover{
+    background: lightpink;
+    color: white;
+}
+
+.m-1 {
+    margin: 1rem;
+}
+
+input:focus {
+    background: lightblue;
+}

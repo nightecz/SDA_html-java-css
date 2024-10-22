@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body, html {
+    margin: 0;
+}
+
+div {
+    background: lightpink;
+    width: 200px;
+    height: 200px;
+    /* border-style: solid;
+    border-width: 3px;
+    border-color: blue;
+    borderl-left: 1px solid pink;
+    border-right-colour: black;
+*/
+    border: 3px solid black;
+    padding: 10px 40px;
+    margin: 30px; /* margin collapsing - u display: block; */
+    display: inline-block;
+}
+
+
+
+/*
+
+blokové elementy - můžeme jim nastavit výšku a šírku
+inline elementy - NEJDE TO !!!
+inline-block - elementy, které neřádkují, ale můžeme jim nastavit width a height
+
+*/
+
+/*
+
+padding-top: 10px;
+padding-right: 20px;
+padding-bottom: 30px;
+padding-left: 15px;
+
+
+padding: 10px 20px 30px 15px; (zjednodušenný zápis hořejšku, tedy top right bottom left)
+padding: 10px 20px 30px; (top, right+left, bottom) - zjednodušený a prostřední pro right a left
+padding: 10px 20px (první platí pro vertikálu, druhé pro horizontální, tedy top//bottom right/left
+padding: 10px (pro všechny stejně)
+
+
+*/

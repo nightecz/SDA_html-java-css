@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+relative units
+
+
+- % - relativní k velikosti rodičovského elementu
+- bh, vw- relativní k velikosti viewportu
+ 100vw = celá šířka viewportu
+ 100vh = celá výška viewportu 
+overflow: visible(default), hidden, auto(scrolovací lišta se vytvoří)
+- rem - relativní k základní velikosti písma v prohlížeči (16px); tzn. 2,5 rem - 2,5 x větší než se ti zobrazuje běžný text (záleží na uživateli jak to má nastavené)
+- em - relativní k velikosti písma pro daný element
+*/
+
+/* body {
+    background: yellow;
+    width: 120vw;
+} */
+
+.inner {
+    height: 300px;
+    width: 50%;
+    background: lightgreen;
+    overflow: auto;
+
+}
+
+
+
+.outer {
+    height: 300px;
+    width: 50%;
+    background: lightpink;
+    overflow: auto;
+}
+
+h1 {
+    font-size: 2,5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1,5rem;
+}
+
+button {
+    padding: 0.4em 0.8em;
+}
+
+.btn-small {
+    font-size: 1rem;
+}
+
+.btn-medium {
+    font-size: 1.5rem;
+}
+
+.btn-large {
+    font-size: 2rem;
+}

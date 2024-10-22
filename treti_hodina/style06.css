@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+}
+
+body {
+    background: yellow;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background: lightblue;
+    flex-basis: 100px;
+    flex-grow: 0;
+    display: flex;
+    overflow: auto;
+}
+
+main {
+    background: lightpink;
+    flex-grow: 1;
+    display: flex;
+    overflow: auto;
+}
+
+footer {
+    background: lightblue;
+    flex-basis: 50px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+aside {
+    background: lightgreen;
+    flex-basis: 100px;
+    flex-shrink: 0;
+}
+.content{
+    background: white;
+    flex-grow: 1;
+    overflow: auto;
+}

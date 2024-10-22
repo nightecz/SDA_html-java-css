@@ -1,0 +1,38 @@
+
+
+/*
+
+1) HTML color names ....
+2) hexadecimální kód ...#RRGGBB
+    #FF0000 - červená max., jinak nic (green i blue) nic
+    #OOFF00 - bude 100% zelená
+    #0000FF - 100 % modrá
+    #FFFFFF - bílá
+    #000000 - černá
+            - RR = GG = BB => šedá
+    #676767 ... střední šedá
+    #222222 ... tmavá šedá
+    #fefefe ... nejsvětlejší šedá
+
+    AA - min. 4,5 nebo 3 pro velké písmo
+    AAA - min. 7 nebo 4,5 pro velké písmo
+
+3) rgb
+    color: rgb(255, 255, 255) - bílá
+    color: rgb(0, 0, 0) - černá
+
+4) rgba
+    rgba(0, 0, 0, opacity)
+    opacity 0 - 1 .... 0 = úplně průhledná, 1 - zcela neprůhledné
+
+*/
+
+body{
+    background: yellow;
+} 
+
+div {
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5)
+}

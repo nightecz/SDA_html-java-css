@@ -1,0 +1,26 @@
+/* .square{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+.bg-blue {
+    background: lightblue;
+}
+
+*/
+ul {
+    list-style-type: none;
+    border: 1 px solid #cdcdcd;
+    padding: 10;
+}
+
+li {
+    padding: .3em .7em;
+    cursor: pointer;
+    background: lightpink;
+}
+
+li:not(:last-child) {
+    border-bottom: 1px solid #cdcdcd;
+}

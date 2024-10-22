@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 
+
+FLEX BOX 
+Holy Grail layout
+
+justify-content: - rozmístění po hlavní ose
+    flex-start (default)
+    flex-end
+    center
+    space-between
+    space-evenly
+
+align-items: - rozmístění po vedlejší ose
+    stretch (default)
+    flex-start
+    flex-end
+    center
+
+    flex-basis - rozměr flex item ve vztahu k hlavní ose
+
+    flex-grow - jak se může item(flex-item) zvětšovat
+        0 (default)
+
+    flex-shrink - jak se může item zmenšovat
+        1
+
+
+Absolutní centrování uvnitř mateřského contentu
+    display: flex;
+    justify-content: center;
+    align-items: center;
+*/
+
+.container {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row; /*default je row, lze ale dát i column, center */
+    justify-content: center; /* flex-end, center, space-between */
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: .5rem; */
+}
+
+.square {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: .5rem; */
+}
+
+.square:first-child {
+    background: lightpink;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.square:nth-child(2) {
+    background: lightblue;
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+
+.square:nth-child(3) {
+    background: lightgreen;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.square:nth-child(4) {
+    background: yellow;
+    flex-grow: 0;
+    flex-shrink: 1;
+}

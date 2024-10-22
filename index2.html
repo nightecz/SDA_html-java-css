@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> web forms</h1>
+    <form autocomplete="off">
+
+        <div>  
+            <div>
+                <label for="titul">titul</label>
+            </div>
+            <div>
+                <input type="text" id="titul" value="Ing." autofocus/>
+            </div>
+        </div>
+
+    <div>  
+        <div>
+            <label for="firstname">jméno</label>
+        </div>
+        <div>
+            <input name="firstname" type="text" id="firstname" value="Karel" readonly/>
+        </div>
+    </div>
+
+    <div>
+        <label for="lastname">příjmení</label>
+    </div>
+    <div>
+        <input name="lastname" id="lastname" type="text" value="Houska" disabled/>
+    </div>
+  
+    <div>
+        <div>
+            <label for="comment">váš komentář</label> 
+        </div>
+    </div>
+    <body>
+        <div>
+            <textarea id="comment" cols="60" rows="8"></textarea>
+        </div>
+    </body>
+        <div>
+            <label for="city">město</label>
+        </div>
+        <div>
+            <select id="city" name=>
+                <option value=""></option>
+                <option value="12">Písek</option>
+                <option value="13">Brno</option>
+                <option value="14" selected>Praha</option>
+                <option>Kroměříž</option>
+                <option>Olomouc</option>
+            </select>
+        </div>
+    </div>
+
+    <div>
+        <input type="submit" value="Pošli to ty vole"/>
+    </div>
+
+    <div>
+       <button>Odeslat form</button> 
+    </div>
+
+</form>
+    <!-- UI form controls ... kontrolky
+    input
+    textarea
+    select
+    -->
+    <!-- booleanovské attributy
+    pokud je uveden, tak je true, pokud není uveden, je false 
+    -->
+    <!-- id - globální atribut - identifikace element - musí být unikátní v rámci dokumentu -->
+     
+</body>
+</html>

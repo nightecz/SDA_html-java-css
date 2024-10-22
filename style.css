@@ -1,0 +1,55 @@
+* {
+    color: green;
+    font-size: 22px;
+}
+
+p {
+    font-style: italic;
+}
+
+
+.text-red {
+    color: red;
+}
+
+
+.text-violet {
+    color: violet;
+}
+
+
+#paragpraph {
+    color: blue;
+}
+
+
+div {
+    color: blue;
+}
+
+
+#mydiv {
+    color: black;
+}
+
+/*
+CSS selectors
+
+1) * - vybírá všechny elemnty
+2a) tagName - všechny elementy daného tagu
+2b) [attribute] - všechny elementy jakékoliv, které mají daný attribut
+2c) [attribute = value] - vybírá všechny el., které mají daný attribut dané hodnoty 
+3) .class vybírá všechny elementy s danou třídou
+4) #id - vybírá element daného id
+
+*/
+
+
+/*
+
+multi word phrase
+
+camelCase - multiWordPhrase
+kebab-case - multi-word-phrase
+snake_case - multi_word_phrase
+*/
