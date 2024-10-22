@@ -1,17 +1,18 @@
 const employees = [
-    { first: 'Karel, last: 'Houska', salary: 3500, position: 'manager' },
-    { first: 'Jenda, last: 'Benda', salary: 2000, position: 'secretary' },
-    { first: 'Jana, last: 'Nováková', salary: 1300, position: 'manager' },
-]
-
-
+    { first: 'Karel', last: 'Houska', salary: 3500, position: 'manager' },
+    { first: 'Jenda', last: 'Benda', salary: 2000, position: 'secretary' },
+    { first: 'Jana', last: 'Nováková', salary: 1300, position: 'manager' }
+  ]
+  
 // tabulka
 /*
 full name || position || salary
 ________________________________
 Karel Houska || manager || 3500
+*/
 
 /*
+vytvořit pole headers = ['full name', 'position', 'salary']
 vytvořit tabulku
 vytvořit thead
 vytvočit tr
@@ -35,13 +36,11 @@ cyklus přes employees
     vytvořit td3
     vložit do něj employee.salary
     vložit td3 do tr
-
-
-
-vložíme table do body
-
-
+    vložit tr do tbody
+vložit tbody do table
+vložit table do body
 */
+
 
 const renderElement = (tagName, textContent, parentEl) => {
     const el = document.createElement(tagName)
@@ -53,9 +52,10 @@ const table = document.createElement('table')
 const thead = document.createElement('thead')
 const tr = document.createElement('tr')
 headers.forEach(header => {
-    const th = document.createElement('th')
-    th.textContent = header
-    tr.appendChild(th)
+    // const th = document.createElement('th')
+    // th.textContent = header
+    // tr.appendChild(th)
+    renderElement('th', header, tr)
 })
 thead.appendChild(tr)
 table.appendChild(thead) // tabulka pohltí thead

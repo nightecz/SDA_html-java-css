@@ -15,7 +15,7 @@ for (let i = 1; i < 5; i++) {
 
 let fruits = ['hruška', 'jablko', 'švestka']
 for (let i = 0; i < 3; i++) {
-    console.log(fruits[i - 1])
+    console.log(fruits[i - 1]) //console.log(fruits[i])
 }
 
 //do {
@@ -31,14 +31,14 @@ function sum1 (a, b) {
 
 
 fruits.forEach((item, index) => { // Anonymous function
-    console.log((index + 1) + '. ' + item)
+    console.log((index + 1) + '. ' + item) //místo item lze použít i 'fruit'
 })
 
 const employees = [
-    { first: 'Karel, last: 'Houska', salary: 3500, position: 'manager' },
-    { first: 'Jenda, last: 'Benda', salary: 2000, position: 'secretary' },
-    { first: 'Jana, last: 'Nováková', salary: 1300, position: 'manager' },
-]
+    { first: 'Karel', last: 'Houska', salary: 3500, position: 'manager' },
+    { first: 'Jenda', last: 'Benda', salary: 2000, position: 'secretary' },
+    { first: 'Jana', last: 'Nováková', salary: 1300, position: 'manager' },
+  ]
 
 // vypsat celá jména všech zaměstnanců
 
@@ -46,7 +46,7 @@ employees.forEach(employee => {
     console.log(employee.first + ' ' + employee.last)
 })
 
-// vypsat manažery
+// vypsat celá jména manažerů
 employees.forEach(employee => {
     if (employee.position === 'manager') {
         console.log(employee.first + ' ' + employee.last)
@@ -54,6 +54,7 @@ employees.forEach(employee => {
 })
 
 // součet všech platů všech lidí
+let result = 0
 employees.forEach(employee => {
     result += employee.salary
 })
@@ -77,6 +78,7 @@ const ucFirst = (str) => {
     return result
 }
 
+/*
 console.log(ucFirst('KARel'))
 console.log('Karel'.toUppoerCase())
 
@@ -84,3 +86,5 @@ let str = 'Karel'
 str.forEach((char)) => {
 
 })
+
+*/

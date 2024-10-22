@@ -32,14 +32,8 @@ fruits.forEach(fruit => { //přes jednotlivé fruits mohu prohnat cyklus forEach
     ul.appendChild(li) // přiřadí do ul child li
 })
 
-// DOPLNIT
-// fruits.forEach((fruit, index) => {
-//    if (index <3) {
-//        const 
-//    }
-// })
 
-// challenge ze shora napsán ve for cyklu
+// challenge ze shora napsán ve for cyklu - jednodušeji a lépe
 for (let i = 0; i < 3; i++) {
     const li = document.createElement('li')
     li.textContent = fruits[i]

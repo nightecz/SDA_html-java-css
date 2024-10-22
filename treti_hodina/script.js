@@ -20,7 +20,7 @@ víceřádkový koment
 */
 
 
-// referenční komplexní
+// referenční / komplexní
 
 // deklarace proměnných "let"
 // historicky se používal "var" to již nepoužívat!
@@ -39,3 +39,18 @@ let myVar2
 console.log(myVar2) // undefined
 
 let myVar3 = null
+
+/* další varianty
+let myVar = 56
+const myConst = 'ahoj' // do proměnné se již dále nesmí nikdy přiřazovat
+// myConst = 9
+myVar = 12
+myVar = myVar + 2
+myVar = 'I\'m Tomik'
+console.log(myVar)
+
+let myVar2
+console.log(myVar2) // undefined
+
+let myVar3 = null
+*/

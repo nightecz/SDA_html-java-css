@@ -23,7 +23,7 @@ lis.forEach((li,index) => {
 })
 
 // nebo to lze vyřešit to indexování takto:
-fruits.forEach((fruits, index) => {
-    const li = document.querySelector('li:nth-child(' + (index + 1) ')')
+fruits.forEach((fruit, index) => {
+    const li = document.querySelector('li:nth-child(' + (index + 1) + ')')
     li.textContent = fruit
-})
+  })
