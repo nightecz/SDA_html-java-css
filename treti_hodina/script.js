@@ -25,7 +25,7 @@ víceřádkový koment
 // deklarace proměnných "let"
 // historicky se používal "var" to již nepoužívat!
 
-let myVar
+let myVar = 56
 const myConst = "ahoj" //musíme dát ihned hodnotu konstanty, již dále nesmí se nikdy přiřazovat
 myConst = 9
 

@@ -38,4 +38,19 @@ document.addEventListener('click', (e) => {
     console.log('document clicked')
     console.log(e.target)
 })
+
+lis.forEach((li) => {
+  li.addEventListener('click', myFn)
+  // li.removeEventListener('click', myFn)
+})
+
+document.querySelector('ul').addEventListener('click', (e) => {
+  console.log('ul clicked')
+  console.log(e.target)
+
+})
+
+
+
+
 // EVENT BUBBLING

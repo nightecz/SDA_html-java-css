@@ -17,15 +17,15 @@ console.log(myVar[2]) //78)
 */
 
 const myObj = {
-    key1: value1,
-    key2: value2,
+    key1: 'value1',
+    key2: 'value2',
     key3: 565656,
     key4: [1, 2, 3],
-    key5 {
-        nestedKey1: 'value???'
+    key5: {
+      nestedKey1: 'value???'
     },
     'my-another-key': 'another value'
-}
+  }
 
 console.log(myObj.Key4)
 
@@ -36,7 +36,7 @@ console.log(myObj1)
 
 let a = 'first'
 
-myObj1[JS expression] .... myObjk.first
+//myObj1[a] ..... myObj.first
 
 let myNum = 1
 console.log(myObj['key' + myNum]) // 'value1'

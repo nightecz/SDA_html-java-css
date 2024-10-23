@@ -35,3 +35,26 @@
 
 
         value === value // true
+
+
+    */
+
+
+const ucFirst = (str) => {
+    let result = ''
+    result += str[0].toUpperCase()
+    result += str.slice(1).toLowerCase()
+    return result
+  }
+  
+  console.log(ucFirst('KARel'))
+  console.log('KARel'.toUpperCase())
+  
+  // split(delimiter) => udělá ze stringu pole - rozdělí podle delimiteru
+  
+  
+  let str = 'Karel'
+  let strAr = str.split('')
+  strAr.forEach((char) => {
+    console.log(char)
+  })

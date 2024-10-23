@@ -7,7 +7,7 @@ let globalVar = 9
 function sum (a, b) {
     // zbytečnélet result = a + b
     //bad practise = console.log(result)
-    return result a + b
+    return a + b
 }
 
 //let result = sum(8,3) //

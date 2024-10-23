@@ -1,17 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
-<p>
-    <h1 class="text-red">css - úvod</h1>
-    <lorem10 class="text-red text-violet">lorem10</p>
-    <p id="paragpraph">modré</p>
-    <p> zelené?</p>
+<body>
+  <h1>web forms</h1>
+  <form autocomplete="off">
+    <div>
+      <div>
+        <label for="firstname">jméno</label>
+      </div>
+      <div>
+        <input name="firstname" type="text" id="firstname">
+      </div>
+    </div>
 
-    <div class="text-red" id="mydiv">lorem2</div>
+    <div>
+      <div>
+        <label for="lastname">příjmení</label>
+      </div>
+      <div>
+        <input name="lastname" id="lastname" type="text">
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <label for="city">město</label>
+      </div>
+      <div>
+        <select id="city" name="city">
+          <option value=""></option>
+          <option value="12">Brno</option>
+          <option value="13">Praha</option>
+          <option value="16">Olomouc</option>
+          <option value="22">Kroměříž</option>
+        </select>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <label for="comment">váš komentář</label>
+      </div>
+      <div>
+        <textarea id="comment" cols="30" rows="8" name="comment"></textarea>
+      </div>
+    </div>
+
+    <div>
+      <!-- <input type="submit" value="pošli to"> -->
+       <button type="submit">odeslat form</button>
+    </div>
+  </form>
+  <!-- UI form controls ... kontrolky
+    input
+    textarea
+    select
+   -->
+    <!-- booleanovské attributy
+      pokud je uveden, je true ... pokud není uveden, je false
+    -->
+  <!-- id - globální atribut - identifikace element - musí být unikátní v rámci dokumentu -->
 </body>
 </html>
+
+
+
+firstname=Jenda
+&
+firstname=Benda
+&
+city=12
+&
+comment=dsksjdk
