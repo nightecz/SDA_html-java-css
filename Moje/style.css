@@ -1,0 +1,41 @@
+p {
+    color: red;                       /* text */
+    color: #FFFFFF;                   /* #RRGGBB - red/green/blue hexadecimal */
+    color: rgb(100, 23, 45);          /* red, green, blue (int 0-255) */
+    color: hsl(0, 100%, 50%);         /* hue (int 0-255), saturation & brightness 0-100% */
+    color: rgba(100, 23, 45, 0.5);    /* rgb + alpha (fp 0-1) */
+    color: hsla(a0, 100%, 50%, 0.5);  /* hue + alpha (fp 0-1) */
+}
+
+/* Vlastnost background-color nastavuje barvu pozadí prvku. */
+
+p {
+    background-color: red;
+}
+
+/* Vlastnost border určuje tloušťku, typ čáry (přerušovaná, souvislá, tečkovaná atd.) a barvu okraje. */
+
+p {
+    border: 1px solid black;
+}
+
+/* Vlastnost text-alig - Vlastnost text-align určuje horizontální zarovnání textu v elementu. Může nabývat jednoho ze čtyř parametrů: right, left, center, justify. */
+p {
+    text-align: center;
+}
+
+.form-control {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+}
+
+input {
+    font-size: 1.2rem;
+    padding: .3em .6em;
+}
+
+form {
+    max-width: 300px;
+}

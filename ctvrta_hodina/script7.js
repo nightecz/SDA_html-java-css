@@ -1,5 +1,6 @@
 // Asynchronní kód
 
+// funkce se provede až po tom intervalu (1000 ms = 1 sekunda)
 // setTimeout(() => {
 //   console.log('ahoj')
 // }, 1000)

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        /* here we set CSS rules (code) */ 
+    </style>
+</head>
+<body>
+<form autocomplete="off">
+    <div class="form-control">
+        <label for="firstname">first name</label>
+        <input id="firstname">
+    </div>
+    <div class="form-control">
+        <label for="lastname">last name</label>
+        <input id="lastname">
+    </div>
+    <div class="form-control">
+        <label for="position">position</label>
+        <input id="position">
+    </div>
+    <div class="form-control">
+        <label for="dateofbirth">date of birth</label>
+        <input type="date" id="dateofbirth">
+    </div>
+    <div class="form-control">
+        <label for="salary">salary</label>
+        <input type="number" id="salary">
+    </div>
+    <div class="form-control">
+    <button>Odešli to</button>
+    </div>
+</form>
+
+    <table border="1">
+        <tr>
+            <td rowspan="2" colspan="2"></td>
+            <td colspan="2">Used Belt Deflection</td>
+            <td rowspan="2">Set deflection of new belt</td>
+        </tr>
+        <tr>
+            <td>Limit</td>
+            <td>Adjust Deflection</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Alternator</td>
+            <td>Models without AC</td>
+            <td>10mm</td>
+            <td>5-7mm</td>
+            <td rowspan="2">5-7mm</td>
+        </tr>
+        <tr>
+            <td>Models with AC</td>
+            <td>12mm</td>
+            <td>6-8mm</td>
+        </tr>
+        <tr>
+            <td colspan="2">Power Steering Oil Pump</td>
+            <td>12.5mm</td>
+            <td>7.9mm</td>
+            <td>6-8mm</td>
+        </tr>
+    </table>
+
+<!-- Checkbox - Zaškrtávací políčko. -->
+    <input type="checkbox" name="accept" /> I accept the terms and conditions
+
+<!-- radio - Umožňuje vybrat jednu z dostupných možností.-->
+    <input type="radio" name="sex" value="female" /> Female
+    <input type="radio" name="sex" value="male" /> Male
+
+<!-- Soubor, Umožňuje vybrat soubor z disku.-->
+    <input type="file" name="fileUpload" />
+
+<!-- Umožňuje vytvořit drop-down seznam. -->
+    <select name="city">
+        <option value="value1">New York</option>
+        <option value="value2">Berlin</option>
+        <option value="value3">London</option>
+    </select>
+
+<!-- Textarea. Tato značka umožňuje zadávat text do více řádků.-->
+    <textarea cols="10" rows="10" name="message"></textarea>
+
+<!-- Field label - Pole formuláře lze popsat jako štítky (labely).-->
+    <label for=“name”>Name: </label>
+    <input type=“text” name=“name” id=“name” />
+<script src="script.js" type="module"></script>
+
+</body>
+</html>

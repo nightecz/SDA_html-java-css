@@ -1,7 +1,11 @@
-/* .square{
+ .square{
     height: 200px;
     width: 200px;
     border: 1px solid black;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;/* rozvržení po vlastní ose */
+    align-items: center; /* rozvržení po vertikále*/
 }
 
 .bg-blue {
